@@ -138,7 +138,7 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
 @media(max-width:820px){
   .nav-links{position:fixed;inset:0 0 0 30%;background:#fff;flex-direction:column;justify-content:center;gap:1.6rem;transform:translateX(100%);transition:transform .25s ease;box-shadow:-10px 0 30px rgba(0,0,0,.1)}
   .nav-links.open{transform:translateX(0)}
-  .nav-toggle{display:block}
+  .nav-toggle{display:block;position:relative;z-index:1100}
   .booking-wrap,.location-grid{grid-template-columns:1fr}
   .form .two{grid-template-columns:1fr}
   .nav-links .btn{width:72%;justify-content:center;text-align:center}
@@ -153,7 +153,7 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
       <img src="logo.png" alt="Catch A Smile logo">
       <span><b>Catch A Smile</b><span>Accessible family fishing</span></span>
     </a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Open menu" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.textContent=o?'✕':'☰';this.setAttribute('aria-label',o?'Close menu':'Open menu')">☰</button>
     <nav class="nav-links" id="nav">
       <a href="#about" onclick="closeNav()">About</a>
       <a href="#facilities" onclick="closeNav()">Facilities</a>
