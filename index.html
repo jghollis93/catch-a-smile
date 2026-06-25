@@ -9,17 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
 :root{
-  --water:#0e7c86;
-  --water-dark:#0a5a62;
-  --water-deep:#073d43;
-  --reed:#4a8c3f;
-  --reed-light:#76c043;
-  --sun:#f6b93b;
-  --sand:#f4efe6;
-  --ink:#1f2d2e;
-  --muted:#52635f;
+  --water:#1a1ad0;
+  --water-dark:#0a0a99;
+  --water-deep:#080868;
+  --reed:#3346d6;
+  --reed-light:#5b6ef0;
+  --sun:#1a1ad0;
+  --sand:#f3f6fd;
+  --ink:#10173a;
+  --muted:#4a5578;
   --white:#ffffff;
-  --shadow:0 10px 30px rgba(7,61,67,.12);
+  --shadow:0 10px 30px rgba(8,8,104,.14);
   --radius:18px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -29,10 +29,10 @@ h1,h2,h3,h4{font-family:'Poppins',sans-serif;line-height:1.2}
 a{color:var(--water-dark)}
 img{max-width:100%;display:block}
 .container{width:min(1150px,92%);margin-inline:auto}
-.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--sun);color:#3a2c00;font-family:'Poppins',sans-serif;font-weight:700;padding:.95rem 1.8rem;border-radius:999px;text-decoration:none;border:none;cursor:pointer;font-size:1.05rem;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;box-shadow:0 8px 20px rgba(246,185,59,.35)}
-.btn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(246,185,59,.45)}
-.btn--green{background:var(--reed-light);color:#0c2b06;box-shadow:0 8px 20px rgba(118,192,67,.35)}
-.btn--green:hover{box-shadow:0 12px 26px rgba(118,192,67,.45)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--sun);color:#ffffff;font-family:'Poppins',sans-serif;font-weight:700;padding:.95rem 1.8rem;border-radius:999px;text-decoration:none;border:none;cursor:pointer;font-size:1.05rem;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;box-shadow:0 8px 20px rgba(26,26,208,.35)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(26,26,208,.45)}
+.btn--green{background:var(--reed-light);color:#ffffff;box-shadow:0 8px 20px rgba(91,110,240,.35)}
+.btn--green:hover{box-shadow:0 12px 26px rgba(91,110,240,.45)}
 .btn--ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.7);box-shadow:none}
 .btn--ghost:hover{background:rgba(255,255,255,.15)}
 
@@ -358,23 +358,35 @@ images.forEach(function(n){
 
 function sendBooking(e){
   e.preventDefault();
-  const g=function(id){return (document.getElementById(id).value||'').trim();};
-  const body=
-"New booking request from the Catch A Smile website:%0D%0A%0D%0A"+
-"Name: "+encodeURIComponent(g('name'))+"%0D%0A"+
-"Email: "+encodeURIComponent(g('email'))+"%0D%0A"+
-"Phone: "+encodeURIComponent(g('phone'))+"%0D%0A"+
-"Booking type: "+encodeURIComponent(g('type'))+"%0D%0A"+
-"Preferred date: "+encodeURIComponent(g('date'))+"%0D%0A"+
-"Preferred time: "+encodeURIComponent(g('time'))+"%0D%0A"+
-"Number of people: "+encodeURIComponent(g('people'))+"%0D%0A"+
-"Experience level: "+encodeURIComponent(g('experience'))+"%0D%0A"+
-"Message: "+encodeURIComponent(g('message'))+"%0D%0A";
-  const subject=encodeURIComponent("Booking request - "+g('name')+" ("+g('date')+")");
-  window.location.href="mailto:enquiries@catchasmile.co.uk?subject="+subject+"&body="+body;
+  var val = function(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+  var name=val('name'), email=val('email'), phone=val('phone'), date=val('date');
+  var time=val('time'), people=val('people'), exp=val('experience'), type=val('type'), msg=val('message');
+  var recipient='jghollis93' + '@' + 'gmail.com';
+  var subject='New booking request from ' + (name||'website');
+  var bodyLines=[
+    'Name: '+name,
+    'Email: '+email,
+    'Phone: '+phone,
+    'Preferred date: '+date,
+    'Preferred time: '+time,
+    'Number of people: '+people,
+    'Experience: '+exp,
+    'Booking type: '+type,
+    'Message: '+msg
+  ];
+  var body=bodyLines.join('\n');
+  var link='mailto:'+recipient+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  window.location.href=link;
+  var form=document.getElementById('bookingForm');
+  var ok=document.createElement('p');
+  ok.textContent='Submit Successful';
+  ok.style.cssText='margin-top:1rem;font-weight:700;color:var(--water-deep);font-size:1.1rem;text-align:center';
+  ok.setAttribute('role','status');
+  form.appendChild(ok);
+  form.reset();
   return false;
 }
-</script>
+    </script>
 
 
 </body></html>
