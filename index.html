@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Catch A Smile - accessible family fishing in Gloucester for everyone, including people with disabilities and special needs. Lessons, parties, BBQ, Pets Corner, Dan's Dinos, camping and the Lily Pad Cafe.">
 <title>Catch A Smile | Accessible Family Fishing in Gloucester</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
 :root{
   --water:#0e7c86;
@@ -53,6 +52,7 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);ba
 .hero{position:relative;color:var(--white);text-align:center;padding:5.5rem 0 5rem;background:linear-gradient(160deg,var(--water) 0%,var(--water-dark) 60%,var(--water-deep) 100%);overflow:hidden}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--sand);clip-path:polygon(0 100%,100% 100%,100% 30%,75% 60%,50% 20%,25% 55%,0 25%)}
 .hero h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;margin-bottom:1rem;text-shadow:0 2px 18px rgba(0,0,0,.18)}
+.hero-logo{display:block;margin:0 auto 1.2rem;max-width:340px;width:70%;height:auto;filter:drop-shadow(0 4px 18px rgba(0,0,0,.25))}
 .hero p.lead{font-size:clamp(1.1rem,2.4vw,1.45rem);max-width:760px;margin:0 auto 1.4rem;font-weight:600}
 .hero .sub{opacity:.92;max-width:620px;margin:0 auto 2rem}
 .hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
@@ -151,7 +151,7 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
       <img src="logo.png" alt="Catch A Smile logo">
       <span><b>Catch A Smile</b><span>Accessible family fishing</span></span>
     </a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
     <nav class="nav-links" id="nav">
       <a href="#about" onclick="closeNav()">About</a>
       <a href="#facilities" onclick="closeNav()">Facilities</a>
@@ -164,8 +164,8 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
 
 <section class="hero" id="top">
   <div class="container">
-    <h1>Catch A Smile</h1>
-    <p class="lead">Open to all &mdash; we welcome people with disabilities &amp; special needs to enjoy fishing &amp; the great outdoors.</p>
+    <img src="logo.png" class="hero-logo" alt="Catch A Smile">
+    <p class="lead">Open to all — we welcome people with disabilities &amp; special needs to enjoy fishing &amp; the great outdoors.</p>
     <p class="sub">A friendly, fully accessible fishery in Gloucester for families, schools and organisations. Fishing parties catered for.</p>
     <div class="hero-cta">
       <a href="#book" class="btn">Book a Lesson</a>
@@ -176,8 +176,8 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
 
 <div class="encourage container">
   <div class="card">
-    <h2>New to fishing? You're exactly who we're here for. &#128031;</h2>
-    <p>We warmly encourage anyone who has never fished &mdash; or only fished a handful of times &mdash; to book and get a lesson. Our welcoming team will help you every step of the way.</p>
+    <h2>New to fishing? You're exactly who we're here for. 🐟</h2>
+    <p>We warmly encourage anyone who has never fished — or only fished a handful of times — to book and get a lesson. Our welcoming team will help you every step of the way.</p>
     <a href="#book" class="btn">Book a Lesson</a>
   </div>
 </div>
@@ -190,8 +190,8 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
       <p>Catch A Smile is open to all. We welcome people with disabilities and special needs to enjoy fishing and the outdoors. Family fishing parties catered for, and schools and organisations are always welcome.</p>
     </div>
     <div class="price">
-      <div class="num">&pound;10.00</div>
-      <p>per person &mdash; includes all equipment &amp; bait</p>
+      <div class="num">£10.00</div>
+      <p>per person — includes all equipment &amp; bait</p>
     </div>
   </div>
 </section>
@@ -204,14 +204,14 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
       <p>Everything you need for a relaxed, accessible day out.</p>
     </div>
     <div class="features">
-      <div class="feature"><div class="ico">&#9855;</div><h3>Wheelchair Accessible</h3><p>Accessible paths and pegs so everyone can join in.</p></div>
-      <div class="feature"><div class="ico">&#128701;</div><h3>Toilet Facilities</h3><p>Clean, accessible toilets on site.</p></div>
-      <div class="feature"><div class="ico">&#128663;</div><h3>Car Park</h3><p>On-site parking right by the water.</p></div>
-      <div class="feature"><div class="ico">&#127837;</div><h3>BBQ Area</h3><p>Bring the family and fire up the BBQ.</p></div>
-      <div class="feature"><div class="ico">&#128048;</div><h3>Pets Corner</h3><p>Meet our friendly animals &mdash; a hit with little ones.</p></div>
-      <div class="feature"><div class="ico">&#129429;</div><h3>Dan's Dinos</h3><p>Roam among our life-size dinosaur display!</p></div>
-      <div class="feature"><div class="ico">&#127957;</div><h3>Camping</h3><p>Stay over &mdash; call us for availability &amp; prices.</p></div>
-      <div class="feature"><div class="ico">&#9749;</div><h3>Lily Pad Cafe</h3><p>Pop in for refreshments and a bite to eat.</p></div>
+      <div class="feature"><div class="ico">♿</div><h3>Wheelchair Accessible</h3><p>Accessible paths and pegs so everyone can join in.</p></div>
+      <div class="feature"><div class="ico">🚽</div><h3>Toilet Facilities</h3><p>Clean, accessible toilets on site.</p></div>
+      <div class="feature"><div class="ico">🚗</div><h3>Car Park</h3><p>On-site parking right by the water.</p></div>
+      <div class="feature"><div class="ico">🍝</div><h3>BBQ Area</h3><p>Bring the family and fire up the BBQ.</p></div>
+      <div class="feature"><div class="ico">🐰</div><h3>Pets Corner</h3><p>Meet our friendly animals — a hit with little ones.</p></div>
+      <div class="feature"><div class="ico">🦕</div><h3>Dan's Dinos</h3><p>Roam among our life-size dinosaur display!</p></div>
+      <div class="feature"><div class="ico">🏕</div><h3>Camping</h3><p>Stay over — call us for availability &amp; prices.</p></div>
+      <div class="feature"><div class="ico">☕</div><h3>Lily Pad Cafe</h3><p>Pop in for refreshments and a bite to eat.</p></div>
     </div>
   </div>
 </section>
@@ -234,7 +234,7 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
       <h2>A day at Catch A Smile</h2>
       <p>Smiles, catches, dinos and more from our fishery and grounds.</p>
     </div>
-    <div class="gallery" id="galleryGrid"></div>
+    <div class="gallery" id="galleryGrid"><a href="th_2-20220208080953.jpg" target="_blank" rel="noopener"><img src="th_2-20220208080953.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_2-20220208081058.jpg" target="_blank" rel="noopener"><img src="th_2-20220208081058.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_0-20220208080949.jpg" target="_blank" rel="noopener"><img src="th_0-20220208080949.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_0-20220208081056.jpg" target="_blank" rel="noopener"><img src="th_0-20220208081056.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_1-20220208080950.jpg" target="_blank" rel="noopener"><img src="th_1-20220208080950.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_1-20220208081057.jpg" target="_blank" rel="noopener"><img src="th_1-20220208081057.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_0-20220208081600.jpg" target="_blank" rel="noopener"><img src="th_0-20220208081600.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_1-20220208081601.jpg" target="_blank" rel="noopener"><img src="th_1-20220208081601.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_3-20220208081604.jpg" target="_blank" rel="noopener"><img src="th_3-20220208081604.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_4-20220208081604.jpg" target="_blank" rel="noopener"><img src="th_4-20220208081604.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_5-20220208081605.jpg" target="_blank" rel="noopener"><img src="th_5-20220208081605.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_6-20220208081606.jpg" target="_blank" rel="noopener"><img src="th_6-20220208081606.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a><a href="th_2-20220208081603.jpg" target="_blank" rel="noopener"><img src="th_2-20220208081603.jpg" loading="lazy" alt="Catch A Smile gallery photo"></a></div>
   </div>
 </section>
 
@@ -249,29 +249,29 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
       <aside class="booking-info">
         <h3>Why book a lesson?</h3>
         <ul>
-          <li><span>&#128587;</span> Perfect for complete beginners or anyone who's only fished a few times.</li>
-          <li><span>&#127881;</span> Family fishing parties catered for.</li>
-          <li><span>&#127979;</span> Schools and organisations welcome.</li>
-          <li><span>&#9855;</span> Fully wheelchair accessible.</li>
-          <li><span>&#128176;</span> Just &pound;10 per person, including equipment &amp; bait.</li>
-          <li><span>&#128222;</span> Call us: <a href="tel:07423236640">07423 236640</a></li>
-          <li><span>&#9993;</span> Email: <a href="mailto:enquiries@catchasmile.co.uk">enquiries@catchasmile.co.uk</a></li>
+          <li><span>🙋</span> Perfect for complete beginners or anyone who's only fished a few times.</li>
+          <li><span>🎉</span> Family fishing parties catered for.</li>
+          <li><span>🏫</span> Schools and organisations welcome.</li>
+          <li><span>♿</span> Fully wheelchair accessible.</li>
+          <li><span>💰</span> Just £10 per person, including equipment &amp; bait.</li>
+          <li><span>📞</span> Call us: <a href="tel:07423236640">07423 236640</a></li>
+          <li><span>✉</span> Email: <a href="mailto:enquiries@catchasmile.co.uk">enquiries@catchasmile.co.uk</a></li>
         </ul>
       </aside>
       <form class="form" id="bookingForm" onsubmit="return sendBooking(event)">
-        <div class="row"><label for="name">Your name *</label><input id="name" required placeholder="First and last name"></div>
+        <div class="row"><label for="name">Your name *</label><input id="name" required="" placeholder="First and last name"></div>
         <div class="two">
-          <div class="row"><label for="email">Email *</label><input id="email" type="email" required placeholder="you@example.com"></div>
+          <div class="row"><label for="email">Email *</label><input id="email" type="email" required="" placeholder="you@example.com"></div>
           <div class="row"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="07000 000000"></div>
         </div>
         <div class="two">
-          <div class="row"><label for="date">Preferred date *</label><input id="date" type="date" required></div>
+          <div class="row"><label for="date">Preferred date *</label><input id="date" type="date" required=""></div>
           <div class="row"><label for="time">Preferred time</label>
             <select id="time"><option value="">No preference</option><option>Morning</option><option>Afternoon</option><option>All day</option></select>
           </div>
         </div>
         <div class="two">
-          <div class="row"><label for="people">Number of people *</label><input id="people" type="number" min="1" value="1" required></div>
+          <div class="row"><label for="people">Number of people *</label><input id="people" type="number" min="1" value="1" required=""></div>
           <div class="row"><label for="experience">Experience level</label>
             <select id="experience"><option>Never fished before</option><option>Fished a handful of times</option><option>Some experience</option><option>Experienced angler</option></select>
           </div>
@@ -300,10 +300,10 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
         <p>Gloucester, GL2 3NW</p>
         <p style="margin-top:1rem"><strong>Phone:</strong> <a href="tel:07423236640">07423 236640</a></p>
         <p><strong>Email:</strong> <a href="mailto:enquiries@catchasmile.co.uk">enquiries@catchasmile.co.uk</a></p>
-        <p style="margin-top:1.2rem"><a class="btn" href="https://www.openstreetmap.org/?mlat=51.8197&mlon=-2.3076#map=15/51.8197/-2.3076" target="_blank" rel="noopener">Get Directions</a></p>
+        <p style="margin-top:1.2rem"><a class="btn" href="https://www.openstreetmap.org/?mlat=51.8197&amp;mlon=-2.3076#map=15/51.8197/-2.3076" target="_blank" rel="noopener">Get Directions</a></p>
       </div>
       <div class="map-card">
-        <iframe title="Map to Catch A Smile" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.36%2C51.80%2C-2.25%2C51.84&layer=mapnik&marker=51.8197%2C-2.3076"></iframe>
+        <iframe title="Map to Catch A Smile" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.36%2C51.80%2C-2.25%2C51.84&amp;layer=mapnik&amp;marker=51.8197%2C-2.3076"></iframe>
       </div>
     </div>
   </div>
@@ -312,8 +312,8 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
 <section style="padding-top:0">
   <div class="container">
     <div class="volunteer">
-      <h3>Volunteers Needed &#128075;</h3>
-      <p>We're always grateful for a helping hand. If you feel you can help, please get in touch &mdash; we'd love to hear from you.</p>
+      <h3>Volunteers Needed 👋</h3>
+      <p>We're always grateful for a helping hand. If you feel you can help, please get in touch — we'd love to hear from you.</p>
       <a href="mailto:enquiries@catchasmile.co.uk?subject=Volunteering%20with%20Catch%20A%20Smile" class="btn btn--green">Get in Touch</a>
     </div>
   </div>
@@ -330,10 +330,10 @@ footer.site small{display:block;opacity:.7;margin-top:1rem}
 
 <footer class="site">
   <div class="container">
-    <a class="fb" href="https://www.facebook.com/Catch-A-Smile-675344626186128/" target="_blank" rel="noopener">&#128279; Follow us on Facebook</a>
+    <a class="fb" href="https://www.facebook.com/Catch-A-Smile-675344626186128/" target="_blank" rel="noopener">🔗 Follow us on Facebook</a>
     <p>Helping people with disabilities &amp; special needs enjoy fishing.</p>
-    <p>Elmore Lane West, Stonebench, Gloucester, GL2 3NW &bull; <a href="tel:07423236640" style="color:#aee6ff">07423 236640</a></p>
-    <small>&copy; <span id="yr"></span> catchasmile.co.uk &mdash; All rights reserved.</small>
+    <p>Elmore Lane West, Stonebench, Gloucester, GL2 3NW • <a href="tel:07423236640" style="color:#aee6ff">07423 236640</a></p>
+    <small>© <span id="yr">2026</span> catchasmile.co.uk — All rights reserved.</small>
   </div>
 </footer>
 
@@ -375,5 +375,6 @@ function sendBooking(e){
   return false;
 }
 </script>
-</body>
-</html>
+
+
+</body></html>
